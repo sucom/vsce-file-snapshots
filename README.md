@@ -6,18 +6,16 @@ To backup a folder, checkout [Backup Folder](https://marketplace.visualstudio.co
 
 ## Installation
 
-### Recommended
+- Install from [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=spajs.backup-file)
+
+- Command Line: `code --install-extension spajs.backup-file`
+
+OR
 
 1. Open VS Code
 2. Go to Extensions
-3. Search "File Snapshots"
+3. Search "Backup File"
 4. Click **Install**
-
-### Alternative Methods
-
-- Install from [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=spajs.file-snapshots)
-
-- Command Line: `code --install-extension spajs.file-snapshots`
 
 ## Usage
 
@@ -25,7 +23,7 @@ To backup a folder, checkout [Backup Folder](https://marketplace.visualstudio.co
 
 - *Location*: Top-right corner of active editor
 - *Visible* only when file is opened and focused
-- *Icons*: 💾=save | refresh=restore last snapshot/backup
+- *Icons*: 💾=save | refresh=restore last snapshot
 
 #### Using status bar buttons
 
@@ -41,20 +39,24 @@ To backup a folder, checkout [Backup Folder](https://marketplace.visualstudio.co
 
 ### Extension Settings (Ctrl + ,)
 
-`File` → `Preferences` → `Settings` → Search "fileSnapshots"
+`File` → `Preferences` → `Settings` → Search "backupFile"
 
-```fileSnapshots.backupDirectory```: Custom backup directory path. If empty, defaults to .vscode/file-snapshots in the current workspace.
+```backupFile.backupDirectory```: Custom backup directory path. If empty, defaults to .vscode/file-snapshots in the current workspace.
 
-```fileSnapshots.autoBackupOnSave```: Automatically backup files when they are saved.
+```backupFile.autoBackupOnSave```: Automatically backup files when they are saved.
 
-```fileSnapshots.backupOnlyOnDiff```: If enabled, creates backup only on content diff or ignores. If disabled, creates backup on request.
+```backupFile.backupOnlyOnDiff```: If enabled, creates backup only on content diff or ignores. If disabled, creates backup on request.
 
-```fileSnapshots.preserveFolderStructure```: Preserve the original folder structure in backups.
+```backupFile.preserveFolderStructure```: Preserve the original folder structure in backups.
 
-```fileSnapshots.cleanupDays```: Number of days to keep backup files before they can be cleaned up.
+```backupFile.cleanupDays```: Number of days to keep backup files before they can be cleaned up.
 
-```fileSnapshots.autoCleanup```: Automatically clean up old backup files when creating new backups.
+```backupFile.autoCleanup```: Automatically clean up old backup files when creating new backups.
 
 ## License
 
 MIT
+
+## Home
+
+[Git](https://github.com/sucom/vsce-backup-file)
