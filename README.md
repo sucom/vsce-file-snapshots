@@ -1,4 +1,4 @@
-# VS Code Extension: File Snapshots
+# VS Code Extension: Backup File
 
 Never lose your progress — instantly back up your file before every edit, whether by you or your AI.
 
